@@ -1,0 +1,64 @@
+# Virtual Environments
+.venv/
+.venv-*/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Node modules
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Uploads
+uploads/
+Trainedmodellogsscreenshots/
+
+# Test data
+Images_Input Testing/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# ML Models (large binary files)
+*.h5
+*.pkl
+*.joblib
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Vector databases
+vector_db/
+
+# Package locks (keep package.json but not lock for root)
+package-lock.json

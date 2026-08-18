@@ -1,0 +1,146 @@
+# Agricultural Knowledge Base - Crop Diseases and Treatments
+
+## Common Crop Diseases
+
+  Early Blight (Tomato)
+Early blight is a fungal disease affecting tomato plants, characterized by dark brown spots with concentric rings on lower leaves. It typically appears during warm, humid weather and can spread rapidly if not controlled.
+
+ Symptoms: 
+- Dark spots with target-like concentric rings on older leaves
+- Yellow halos around spots
+- Premature leaf drop
+- Fruit spots near the stem
+
+ Treatment: 
+- Remove and destroy infected leaves immediately
+- Apply copper-based fungicide (2-3 grams per liter)
+- Improve air circulation between plants
+- Water at soil level, avoid wetting foliage
+- Apply mulch to prevent soil splash
+
+ Prevention: 
+- Maintain 18-24 inch spacing between plants
+- Rotate crops every 2-3 years
+- Use disease-resistant varieties
+- Apply preventive fungicide before rainy season
+
+  Late Blight (Tomato & Potato)
+Late blight is a devastating disease caused by water mold, capable of destroying entire crops within days during favorable conditions.
+
+ Symptoms: 
+- Water-soaked irregular lesions on leaves
+- White fuzzy growth on leaf undersides
+- Brown-black lesions on stems
+- Firm brown rot on fruits
+
+ Treatment: 
+- Remove infected plants immediately
+- Apply systemic fungicide (Metalaxyl or Mancozeb)
+- Increase spray frequency during humid weather
+- Ensure good drainage
+
+ Prevention: 
+- Plant certified disease-free seeds
+- Avoid overhead irrigation
+- Apply preventive copper spray weekly during monsoon
+- Monitor weather conditions closely
+
+  Powdery Mildew
+Powdery mildew appears as white powdery patches on leaves and stems, affecting many crops including tomatoes, cucumbers, and grapes.
+
+ Symptoms: 
+- White powdery coating on leaves
+- Distorted new growth
+- Yellowing and premature leaf drop
+- Reduced fruit quality
+
+ Treatment: 
+- Spray with sulfur-based fungicide
+- Use baking soda solution (1 tablespoon per gallon)
+- Apply neem oil weekly
+- Improve air circulation
+
+ Prevention: 
+- Avoid excessive nitrogen fertilization
+- Space plants adequately
+- Remove infected parts promptly
+- Water early morning
+
+  Bacterial Spot
+Bacterial spot affects tomatoes and peppers, causing significant yield losses during warm, rainy weather.
+
+ Symptoms: 
+- Small dark spots with yellow halos
+- Leaf yellowing and defoliation
+- Fruit lesions with raised margins
+- Severe defoliation in advanced stages
+
+ Treatment: 
+- Apply copper-based bactericide
+- Remove infected plant parts
+- Avoid working with wet plants
+- Use drip irrigation instead of overhead
+
+ Prevention: 
+- Use certified disease-free seeds
+- Practice crop rotation
+- Maintain proper plant spacing
+- Sanitize tools regularly
+
+  Septoria Leaf Spot
+Septoria leaf spot is a common fungal disease of tomatoes, appearing as numerous small spots on leaves.
+
+ Symptoms: 
+- Small circular spots with gray centers
+- Dark brown margins around spots
+- Black dots (spores) in spot centers
+- Lower leaves affected first
+
+ Treatment: 
+- Remove infected lower leaves
+- Apply chlorothalonil or copper fungicide
+- Mulch around plants to prevent soil splash
+- Increase plant spacing
+
+ Prevention: 
+- Stake and prune plants properly
+- Remove plant debris after harvest
+- Rotate with non-host crops
+- Avoid overhead watering
+
+## General Disease Prevention Practices
+
+  Cultural Practices:
+1. Crop Rotation: Change crop families every 2-3 years
+2. Sanitation: Remove plant debris and weeds regularly
+3. Proper Spacing: Allow 18-24 inches between plants
+4. Water Management: Water at soil level early morning
+5. Mulching: Apply organic mulch to prevent soil splash
+
+  Monitoring and Early Detection:
+- Inspect plants every 3-4 days
+- Check leaf undersides for early signs
+- Monitor weather conditions
+- Keep records of disease occurrence
+- Act immediately upon detection
+
+  Soil Health:
+- Add organic compost monthly (100-150 grams per plant)
+- Maintain soil pH 6.0-6.8 for most vegetables
+- Ensure proper drainage
+- Use balanced fertilizers
+- Avoid over-fertilization with nitrogen
+
+  Biological Control:
+- Encourage beneficial insects
+- Use Trichoderma for soil-borne diseases
+- Apply Bacillus subtilis for bacterial diseases
+- Maintain biodiversity in the garden
+
+  Chemical Control Guidelines:
+- Read and follow label instructions
+- Rotate fungicide classes to prevent resistance
+- Apply during cooler hours (early morning/evening)
+- Use proper protective equipment
+- Observe pre-harvest intervals
+- Keep records of applications

@@ -1,0 +1,249 @@
+/* Print Styles for AgriSmart AI
+   Optimized layouts for printing detection reports
+   Clean, professional output without navigation/UI elements
+*/
+
+@media print {
+  /* Hide non-essential elements */
+  nav,
+  .sidebar,
+  .floating-chat-widget,
+  .btn-primary-pro,
+  .btn-secondary-pro,
+  button:not(.print-keep),
+  .back-button,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Reset page margins */
+  @page {
+    margin: 1cm;
+    size: A4;
+  }
+
+  body {
+    background: white;
+    color: black;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  /* Remove glassmorphism effects */
+  .glass-card,
+  .card-pro {
+    background: white !important;
+    backdrop-filter: none !important;
+    border: 1px solid #e5e7eb;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+
+  /* Header styling */
+  .print-header {
+    border-bottom: 2px solid #10b981;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Image optimization */
+  img {
+    max-width: 100%;
+    page-break-inside: avoid;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+  }
+
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: avoid;
+  }
+
+  th, td {
+    border: 1px solid #e5e7eb;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f3f4f6;
+    font-weight: 600;
+  }
+
+  /* Heading adjustments */
+  h1 {
+    font-size: 24pt;
+    color: #10b981;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 18pt;
+    color: #059669;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-size: 14pt;
+    color: #047857;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Status badges */
+  .badge,
+  .status-badge {
+    border: 1px solid currentColor;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+  }
+
+  /* Severity indicators */
+  .severity-high {
+    color: #dc2626 !important;
+  }
+
+  .severity-moderate {
+    color: #f59e0b !important;
+  }
+
+  .severity-low {
+    color: #10b981 !important;
+  }
+
+  /* Grid layouts */
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Page breaks */
+  .page-break {
+    page-break-before: always;
+  }
+
+  .avoid-break {
+    page-break-inside: avoid;
+  }
+
+  /* Footer for each page */
+  .print-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+    padding: 0.5rem;
+  }
+
+  /* Detection card print layout */
+  .detection-print-card {
+    border: 2px solid #10b981;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    page-break-inside: avoid;
+  }
+
+  .detection-print-card img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  /* Metadata grid */
+  .metadata-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .metadata-item {
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+  }
+
+  .metadata-label {
+    font-size: 9pt;
+    color: #6b7280;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .metadata-value {
+    font-size: 11pt;
+    color: #111827;
+    font-weight: 500;
+  }
+
+  /* Logo and branding */
+  .print-logo {
+    width: 120px;
+    height: auto;
+  }
+
+  /* QR code for sharing */
+  .print-qr {
+    width: 80px;
+    height: 80px;
+    float: right;
+  }
+
+  /* Treatment recommendations */
+  .treatment-section {
+    background-color: #f0fdf4;
+    border-left: 4px solid #10b981;
+    padding: 1rem;
+    margin: 1rem 0;
+    page-break-inside: avoid;
+  }
+
+  /* Chart adjustments */
+  .recharts-wrapper {
+    max-height: 300px;
+  }
+
+  /* Hide interactive elements */
+  input[type="checkbox"]:not(.print-keep),
+  input[type="radio"]:not(.print-keep),
+  select:not(.print-keep),
+  .interactive {
+    display: none !important;
+  }
+
+  /* Ensure links are visible */
+  a {
+    color: #10b981;
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #6b7280;
+  }
+
+  /* Remove dark mode */
+  .dark\:bg-gray-800,
+  .dark\:text-white,
+  .dark\:border-gray-700 {
+    background: white !important;
+    color: black !important;
+    border-color: #e5e7eb !important;
+  }
+}

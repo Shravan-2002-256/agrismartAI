@@ -1,0 +1,59 @@
+# Core Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Database
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+pymongo==4.6.0
+motor==3.3.2  # Async MongoDB driver
+redis==5.0.1
+alembic==1.12.1
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.1.1
+
+# ML & AI - PRODUCTION READY
+tensorflow==2.15.0  # Deep Learning (MobileNetV2 + LSTM)
+tensorflow-hub==0.15.0  # Pre-trained models (MobileNetV2)
+numpy>=2.0.0
+pillow>=11.0.0
+opencv-python>=4.12.0
+pandas>=2.0.0
+scikit-learn==1.4.0  # Required for LSTM data scaling
+
+# RAG & Embeddings - FREE (No API Keys Required)
+sentence-transformers==2.3.1  # FREE embeddings
+langchain-community==0.0.38  # RAG integration
+langchain-core==0.1.23  # Core LangChain
+
+# NLP - Traditional (Optional)
+# spacy==3.7.2  # Optional - chatbot works without it
+# nltk==3.8.1  # Optional
+
+# API & HTTP
+requests==2.31.0
+httpx==0.25.2
+aiohttp==3.9.1
+
+# Utilities
+python-dotenv==1.0.0
+pydantic==2.5.2
+pydantic-settings==2.1.0
+
+# Image Processing
+grad-cam==1.4.8
+
+# CORS
+python-cors==1.0.0
+
+# Date & Time
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Testing (optional)
+pytest==7.4.3
+pytest-asyncio==0.21.1

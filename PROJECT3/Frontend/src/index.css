@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200;
+  }
+  
+  /* Smooth Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .animate-slideInLeft {
+    animation: slideInLeft 0.6s ease-out;
+  }
+  
+  .animate-slideInRight {
+    animation: slideInRight 0.6s ease-out;
+  }
+  
+  /* Confetti Animation - Custom implementation */
+  @keyframes confetti {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) translateX(calc(var(--speed-x) * 100px)) rotate(720deg);
+      opacity: 0;
+    }
+  }
+  
+  .animate-confetti {
+    animation: confetti linear forwards;
+  }
+  
+  /* Shimmer Effect for Progress Bars */
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+  }
+  
+  /* Pulse Glow Effect */
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(16, 185, 129, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.8);
+    }
+  }
+  
+  .animate-pulse-glow {
+    animation: pulseGlow 2s infinite;
+  }
+}
+
+@layer components {
+  /* Professional Buttons */
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 dark:bg-primary-700 dark:hover:bg-primary-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-semibold py-2 px-4 rounded-lg transition duration-200;
+  }
+
+  .btn-professional {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-200
+           shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-primary-pro {
+    @apply btn-professional bg-gradient-to-r from-primary-600 to-emerald-500
+           hover:from-primary-700 hover:to-emerald-600 text-white
+           hover:scale-105 active:scale-100;
+  }
+  
+  .btn-secondary-pro {
+    @apply btn-professional bg-white dark:bg-gray-800 
+           border-2 border-gray-300 dark:border-gray-600
+           hover:border-primary-500 text-gray-700 dark:text-gray-200;
+  }
+  
+  /* Professional Cards */
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md dark:shadow-gray-900/50 p-6 transition-colors duration-200;
+  }
+
+  .card-pro {
+    @apply bg-white dark:bg-gray-800 rounded-xl 
+           shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]
+           border border-gray-100 dark:border-gray-700 
+           p-6 transition-all duration-300 
+           hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .card-featured {
+    @apply card-pro border-l-4 border-l-primary-500;
+  }
+  
+  .stat-card {
+    @apply card-pro flex items-start justify-between;
+  }
+
+  .card-gradient {
+    @apply card-pro bg-gradient-to-br from-white to-gray-50 
+           dark:from-gray-800 dark:to-gray-900;
+  }
+
+  /* Glassmorphism Effect - Modern frosted glass look */
+  .glass-card {
+    @apply backdrop-blur-lg bg-white/70 dark:bg-gray-800/70
+           border border-white/20 dark:border-gray-700/50
+           rounded-2xl shadow-xl;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .dark .glass-effect {
+    background: rgba(31, 41, 55, 0.7);
+    border: 1px solid rgba(75, 85, 99, 0.3);
+  }
+  
+  /* Professional Inputs */
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400 transition-colors duration-200;
+  }
+
+  .input-professional {
+    @apply w-full px-4 py-3 rounded-lg
+           border-2 border-gray-200 dark:border-gray-700
+           bg-white dark:bg-gray-800
+           text-gray-900 dark:text-gray-100
+           focus:border-primary-500 focus:ring-4 focus:ring-primary-100
+           dark:focus:ring-primary-900
+           transition-all duration-200
+           placeholder:text-gray-400 dark:placeholder:text-gray-500;
+  }
+  
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+  
+  .badge-success {
+    @apply badge bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200;
+  }
+  
+  .badge-warning {
+    @apply badge bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200;
+  }
+  
+  .badge-danger {
+    @apply badge bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200;
+  }
+  
+  .badge-info {
+    @apply badge bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200;
+  }
+
+  /* Loading Skeletons */
+  .skeleton {
+    @apply animate-pulse bg-gray-200 dark:bg-gray-700 rounded;
+  }
+
+  .skeleton-text {
+    @apply skeleton h-4 w-full;
+  }
+
+  .skeleton-title {
+    @apply skeleton h-6 w-2/3;
+  }
+
+  .skeleton-circle {
+    @apply skeleton rounded-full;
+  }
+
+  /* Chat Bubbles */
+  .chat-bubble-user {
+    @apply max-w-[70%] bg-gradient-to-br from-primary-500 to-primary-600 
+           text-white rounded-2xl rounded-tr-sm px-5 py-3 shadow-md;
+  }
+
+  .chat-bubble-bot {
+    @apply max-w-[70%] bg-white dark:bg-gray-800 rounded-2xl rounded-tl-sm 
+           px-5 py-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)]
+           border border-gray-100 dark:border-gray-700;
+  }
+
+  /* Suggestion Chips */
+  .suggestion-chip {
+    @apply px-4 py-2 bg-gray-100 dark:bg-gray-800 
+           hover:bg-primary-50 dark:hover:bg-primary-900/30 
+           text-sm rounded-full border-2 border-transparent 
+           hover:border-primary-300 dark:hover:border-primary-700
+           transition-all duration-200 cursor-pointer;
+  }
+
+  /* Section Headers */
+  .section-header {
+    @apply flex items-center justify-between mb-6 pb-4
+           border-b border-gray-200 dark:border-gray-700;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold text-gray-900 dark:text-white;
+  }
+
+  .section-subtitle {
+    @apply text-gray-600 dark:text-gray-400 mt-1 text-sm;
+  }
+}
